@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Codigo abaixo link para utilizar o bootstrap em meu projeto-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilo.css">
     <title>Speed Flix</title>
 </head>
@@ -14,8 +16,72 @@
     <div class="nome text-center">
         <h1>SPEED FLIX</h1>
     </div>
+    <!--Menu nav Bootstrap-->
+        <nav class="navbar navbar-expand-lg navbar-light cor1">
+            <a class="navbar-brand" href="#">SpeedFlix</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Lançamentos</a>
+                </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Categoria</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#scrollspyHeading3">Ação</a></li>
+                      <li><a class="dropdown-item" href="#scrollspyHeading4">Comédia</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#scrollspyHeading5">Terror</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Filmes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Séries</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+          <!--Componente Carousel do bootstrap passa os sliders em destaque-->
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/quantumania-kang.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/johnwick.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/pantera-negra.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     <!--comp. bootstrap para alinhar o layout-->
-    <div class="container bg-info">
+    <div class="container text-light">
         <h2>FILMES</h2>
     </div>
 
@@ -39,10 +105,10 @@
 
     <br><br>
 
-    <div class="container bg-info">
+    <div class="container text-light">
         <h2>SÉRIES</h2>
     </div>
-    <br><br>
+    
 
     <div class="container">
         
@@ -58,6 +124,32 @@
             </div>
             <div class="col-md-3">
                 <img src="img/strangerthings-capa.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <div class="container text-light" id="scrollspyHeading5">
+        <h2>DOCUMENTÁRIOS</h2>
+    </div>
+    
+
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-3">
+                <img src="img/neymar.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-md-3">
+                <img src="img/ronaldo.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-md-3">
+                <img src="img/racionais.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-md-3">
+                <img src="img/sena.jpg" class="img-fluid" alt="Responsive image">
             </div>
         </div>
 
